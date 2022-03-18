@@ -36,14 +36,14 @@ body {
     text-align: center;
     align-items: center;
     height: 30px;
-    width: 400px;
+    width: 350px;
     padding: 5px;
     font-size: small;
 }
 #quote {
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+    font-weight: 500;
    }
 img {
     height: auto;
