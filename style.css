@@ -14,4 +14,13 @@ body {
     width: auto;
     height: auto;
 }
+#span {
+ font-size: medium;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 500;
+}
+#li {
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
