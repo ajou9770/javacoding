@@ -11,8 +11,8 @@ function onLoginSubmit(event) {
     const username = loginInput.value;
     //greeting.innerText = `hi ${username}`;
     localStorage.setItem(USERNAME_KEY, username);
-    paintGreetings(username);  // <-- paintGreetings function(변수) 실행
-}
+    paintGreetings(username);
+    }  // <-- paintGreetings function(변수) 실행
 
 function paintGreetings(username) {           //<-- panintGreetings 라는 function 생성
     greeting.innerText = `Hi ${username}`;

@@ -8,13 +8,11 @@ fetch(url)
 .then((response) => response.json())
 .then((data) => {
     const name = data.name;
-    console.log(name);
     const weather = data.weather[0].main;
     const Weather = document.querySelector("#weather span:first-child");
     const city = document.querySelector("#weather span:last-child");
     Weather.innerText = name;
     city.innerText = weather;
-    console.log(Weather.innerText);
 });
 }
 
