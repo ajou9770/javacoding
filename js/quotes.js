@@ -1,54 +1,56 @@
 const quotes = [
     {
-        quote : "The way to get started is to quit talkin and begin doing.",
-        author : "Walt Disney",
+        quote: "하늘은 스스로 돕는자를 돕는다",
+        author: "하늘지기"
     },
     {
-        quote : "하늘은 스스로 돕는자를 돕는다.",
-        author : "하늘지기1",
+        quote: "행복은 가까이 있다.",
+        author: "행복지기"
     },
     {
-        quote : "살고자하면 죽고 죽고자 하면 산다 ",
-        author : "김순신",
+        quote: "살고자하는자는 죽는다",
+        author: "이순신"
     },
     {
-        quote : "내가 곧 진리요 생명이다 ",
-        author : "Jesus",
+        quote: "죽고자하면 산다",
+        author: "이순신"
     },
     {
-        quote : "태초에 천지가 창조되다 ",
-        author : "창세기",
+        quote: "소신에게는 아직 12척의 배가 있다",
+        author: "이순신"
     },
     {
-        quote : " 사람은 다 죽는다 ",
-        author : "성경말씀",
+        quote: "사랑은 언제나 오래 참는다",
+        author: "성경"
     },
     {
-        quote : "신은 죽었다",
-        author : "니체",
+        quote: "태초에 천지가 창조되다",
+        author: "성경"
     },
     {
-        quote : "니체는 죽었다 ",
-        author : "-신-",
+        quote: "나를 따르라",
+        author: "장군"
     },
     {
-        quote : " 사람이 답이다. ",
-        author : "-아무게-",
+        quote: "동트기전새벽이 가장어둡다",
+        author: "일기예보"
     },
     {
-        quote : "감사합니다의 다른말 뭐이런걸 다 ",
-        author : "-코미디-",
+        quote: "최선을 다해라.",
+        author: "게으름뱅이"
     },
-    {
-        quote : " 동트기전 새벽이 가장 어둡다 ",
-        author : "-누구지?-",
-    },
-];
+]
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
+function getDayGoodsay() {
+    console.log(quote);
+    console.log(author);
+    quote.innerText = todaysQuote.quote;
+    author.innerText = todaysQuote.author;
+}
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+getDayGoodsay(); 
+ 

@@ -12,24 +12,24 @@ function saveToDos() {
 
 function deletetoDo(event) {
   const li = event.target.parentElement;
-  li.remove();
+  console.log(li.id);
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  saveToDos();
 }
 
 function paintToDo(newTodo) {
-const Li = document.createElement("li");
+const li = document.createElement("li");
+ li.id = newTodo.id;
  const span = document.createElement("span");
+ span.innerText = newTodo.text;
  const Btn = document.createElement("button");
- span.innerText = newTodo;
  Btn.innerText = "✔️";
  Btn.addEventListener("click", deletetoDo);
- Li.appendChild(span); //<-- span의 위치지정 (Li의안에 있다)
- Li.appendChild(Btn); //<-- Btn의 위치지정(Li안에 있다)
- toDoList.appendChild(Li);//<-- Li의 위치지정(toDoList안에 있다)
+ li.appendChild(span); //<-- span의 위치지정 (Li의안에 있다)
+ li.appendChild(Btn); //<-- Btn의 위치지정(Li안에 있다)
+ toDoList.appendChild(li);//<-- Li의 위치지정(toDoList안에 있다)
 }
-// 1.요소를 새로 생성하고(document createElemnet), 
-// 2.요소안에 Text를 지정(요소.innerText)하고, 
-// 3.위치를 지정해준다. 상위요소.appendChild(const 된 요소)
+
 function handleToDoSubmit (event) {
     event.preventDefault();
     const newTodo = toDoInPut.value;
