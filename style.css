@@ -17,10 +17,24 @@ body {
 #span {
  font-size: medium;
  font-family: 'Courier New', Courier, monospace;
- font-weight: 500;
+ font-weight: 600;
 }
 #li {
     font-size: small;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+input {
+    height: 30px;
+    width: 200px;
+    padding: 5px;   
+}
+#todo-form {
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    width: 400px;
+    padding: 5px;
+    font-size: large;
 }
 
