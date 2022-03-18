@@ -9,4 +9,9 @@
     font-size: 35px;
     transition: color 10ms ease-in-out;
 }
+body {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
 
