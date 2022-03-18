@@ -1,1 +1,12 @@
+.hidden {
+    display: none;
+}
+.rate {
+    color: rebeccapurple;
+}
+.clicked {
+    color: blue;
+    font-size: 35px;
+    transition: color 10ms ease-in-out;
+}
 
