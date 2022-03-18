@@ -13,6 +13,7 @@ body {
     text-align: center;
     width: auto;
     height: auto;
+    widows: 100;
 }
 #span {
  font-size: medium;
